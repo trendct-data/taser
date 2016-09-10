@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1453903973556.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A743EDC7",
+    "lastKnownWriteTime" : 0,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "bik8qkvvnw",
+        "caption" : "tase.pop",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=tase.pop&cache_key=bik8qkvvnw",
+        "displayedObservations" : "81",
+        "environment" : "",
+        "object" : "tase.pop",
+        "totalObservations" : "81",
+        "variables" : "5"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

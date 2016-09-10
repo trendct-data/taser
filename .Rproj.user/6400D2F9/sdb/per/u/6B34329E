@@ -1,0 +1,18 @@
+{
+    "contents" : "library(ctnamecleaner)\n\ntase <- read.csv(\"town_incidents2.csv\", stringsAsFactors=FALSE)\n\n\ntase.clean <- ctnamecleaner(Town, tase, filename=\"nope\")\n\n\ntase.pop <- ctpopulator(real.town.name, tase.clean, filename=\"nope\")\n\ntase.pop$incidents.per.capita <- round((tase.pop$Reported.Incidents/tase.pop$pop2013)*1000, 2)\n\ntase.pop$incidents.per.capita <- with(tase.pop, round((Reported.Incidents/pop2013)*10000, 2))\n                                                 \ntase.pop2 <- tase.pop[c(\"Town\", \"Reported.Incidents\", \"incidents.per.capita\")]\n\ntase.pop <- tase.pop[c(\"real.town.name\", \"Reported.Incidents\", \"incidents.per.capita\")]\nwrite.csv(tase.pop2, \"tase.pop.csv\")\n\nlibrary(stringr)\n\ntase.pop$real.town.name <- str_to_title(tase.pop$real.town.name)\nlibrary(trendct)\n\n?trendmap\n\n\ntrendmap(tase.pop, headline=\"Reported stun gun incidents by town department\", subhead=\"Data from 2015. Per capita is per 10,000 residents. Some towns do not appear on this map because they are under the jurisdiction of the State Police. These police departments did not submit a report: Middlebury, Stratford, Thomaston, Weston, and Winchester.\",\n         src=\"Office of Policy and Magagement\", byline=\"Andrew Ba Tran/TrendCT.org\", url_append=\"date\", shape=\"towns\", color=\"yellow-red\")\n\n",
+    "created" : 1453903849519.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "1677953925",
+    "id" : "6B34329E",
+    "lastKnownWriteTime" : 4334816256,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

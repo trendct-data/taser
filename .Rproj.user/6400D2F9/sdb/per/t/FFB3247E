@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1453904009480.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "FFB3247E",
+    "lastKnownWriteTime" : 37446471234093062,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "pu5g69wb9w",
+        "caption" : "tase.clean",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=tase.clean&cache_key=pu5g69wb9w",
+        "displayedObservations" : 81,
+        "environment" : "",
+        "object" : "tase.clean",
+        "totalObservations" : 81,
+        "variables" : 3
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
